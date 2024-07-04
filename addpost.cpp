@@ -1,30 +1,32 @@
-#include "jobs_admin.h"
-#include "ui_jobs_admin.h"
+#include "addpost.h"
+#include "ui_addpost.h"
 #include "my_network_admin.h"
 #include "my_networks_karbar.h"
 #include "messeging.h"
 #include "me.h"
+#include "jobs_admin.h"
 #include "jobs_karbar.h"
 #include "home.h"
-#include "addjob.h"
-Jobs_Admin::Jobs_Admin(QWidget *parent) :
+addPost::addPost(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::Jobs_Admin)
+    ui(new Ui::addPost)
 {
     ui->setupUi(this);
 }
 
-Jobs_Admin::~Jobs_Admin()
+addPost::~addPost()
 {
     delete ui;
 }
-void Jobs_Admin::on_homePushButton_clicked()
+void addPost::on_homePushButton_clicked()
 {
     Home *w = new Home;
     w->show();
     this->close();
 }
-void Jobs_Admin::on_pushButton_2_clicked()
+
+
+void addPost::on_pushButton_2_clicked()
 {
     My_Networks_karbar *w1 = new My_Networks_karbar;
     w1->show();
@@ -36,7 +38,7 @@ void Jobs_Admin::on_pushButton_2_clicked()
 }
 
 
-void Jobs_Admin::on_pushButton_3_clicked()
+void addPost::on_pushButton_3_clicked()
 {
     Jobs_Admin *w2 = new Jobs_Admin;
     w2->show();
@@ -48,7 +50,7 @@ void Jobs_Admin::on_pushButton_3_clicked()
 }
 
 
-void Jobs_Admin::on_pushButton_4_clicked()
+void addPost::on_pushButton_4_clicked()
 {
     Messeging *w3 = new Messeging;
     w3->show();
@@ -56,17 +58,20 @@ void Jobs_Admin::on_pushButton_4_clicked()
 }
 
 
-void Jobs_Admin::on_pushButton_5_clicked()
+void addPost::on_pushButton_5_clicked()
 {
     Me *w4 = new Me;
     w4->show();
     this->close();
 }
-
-
-void Jobs_Admin::on_pushButton_6_clicked()
+void addPost::on_pushButton_clicked()
 {
-    addJob *wwe = new addJob;
-    wwe->show();
+
+}
+
+
+void addPost::on_textEdit_textChanged()
+{
+
 }
 

@@ -6,6 +6,7 @@
 #include "me.h"
 #include "jobs_admin.h"
 #include "jobs_karbar.h"
+#include "addpost.h"
 Home::Home(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::Home)
@@ -63,5 +64,12 @@ void Home::on_pushButton_5_clicked()
     Me *w4 = new Me;
     w4->show();
     this->close();
+}
+
+
+void Home::on_pushButton_6_clicked()
+{
+    addPost *ww = new addPost;
+    ww->show();
 }
 

@@ -1,19 +1,19 @@
-#ifndef JOBS_ADMIN_H
-#define JOBS_ADMIN_H
+#ifndef VIEWPROFILE_H
+#define VIEWPROFILE_H
 
 #include <QMainWindow>
 
 namespace Ui {
-class Jobs_Admin;
+class viewProfile;
 }
 
-class Jobs_Admin : public QMainWindow
+class viewProfile : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    explicit Jobs_Admin(QWidget *parent = nullptr);
-    ~Jobs_Admin();
+    explicit viewProfile(QWidget *parent = nullptr);
+    ~viewProfile();
 
 private slots:
     void on_homePushButton_clicked();
@@ -26,10 +26,8 @@ private slots:
 
     void on_pushButton_5_clicked();
 
-    void on_pushButton_6_clicked();
-
 private:
-    Ui::Jobs_Admin *ui;
+    Ui::viewProfile *ui;
 };
 
-#endif // JOBS_ADMIN_H
+#endif // VIEWPROFILE_H

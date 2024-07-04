@@ -9,7 +9,11 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    addjob.cpp \
+    addpost.cpp \
     code.cpp \
+    comments.cpp \
+    companysignup.cpp \
     confirmprofile.cpp \
     home.cpp \
     jobs_admin.cpp \
@@ -21,10 +25,15 @@ SOURCES += \
     my_network_admin.cpp \
     my_networks_karbar.cpp \
     signup.cpp \
+    viewprofile.cpp \
     welcome.cpp
 
 HEADERS += \
+    addjob.h \
+    addpost.h \
     code.h \
+    comments.h \
+    companysignup.h \
     confirmprofile.h \
     home.h \
     jobs_admin.h \
@@ -35,10 +44,15 @@ HEADERS += \
     my_network_admin.h \
     my_networks_karbar.h \
     signup.h \
+    viewprofile.h \
     welcome.h
 
 FORMS += \
+    addjob.ui \
+    addpost.ui \
     code.ui \
+    comments.ui \
+    companysignup.ui \
     confirmprofile.ui \
     home.ui \
     jobs_admin.ui \
@@ -49,6 +63,7 @@ FORMS += \
     my_network_admin.ui \
     my_networks_karbar.ui \
     signup.ui \
+    viewprofile.ui \
     welcome.ui
 
 # Default rules for deployment.

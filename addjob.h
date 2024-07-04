@@ -1,19 +1,19 @@
-#ifndef JOBS_ADMIN_H
-#define JOBS_ADMIN_H
+#ifndef ADDJOB_H
+#define ADDJOB_H
 
 #include <QMainWindow>
 
 namespace Ui {
-class Jobs_Admin;
+class addJob;
 }
 
-class Jobs_Admin : public QMainWindow
+class addJob : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    explicit Jobs_Admin(QWidget *parent = nullptr);
-    ~Jobs_Admin();
+    explicit addJob(QWidget *parent = nullptr);
+    ~addJob();
 
 private slots:
     void on_homePushButton_clicked();
@@ -26,10 +26,10 @@ private slots:
 
     void on_pushButton_5_clicked();
 
-    void on_pushButton_6_clicked();
+    void on_pushButton_clicked();
 
 private:
-    Ui::Jobs_Admin *ui;
+    Ui::addJob *ui;
 };
 
-#endif // JOBS_ADMIN_H
+#endif // ADDJOB_H

@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>947</width>
     <height>600</height>
    </rect>
   </property>
@@ -21,9 +21,9 @@ background-color: rgb(117, 139, 113);</string>
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>0</x>
       <y>0</y>
-      <width>671</width>
+      <width>961</width>
       <height>80</height>
      </rect>
     </property>
@@ -33,7 +33,7 @@ background-color: rgb(117, 139, 113);</string>
     <widget class="QPushButton" name="homePushButton">
      <property name="geometry">
       <rect>
-       <x>20</x>
+       <x>290</x>
        <y>40</y>
        <width>80</width>
        <height>25</height>
@@ -52,7 +52,7 @@ background-color: rgb(117, 139, 113);</string>
     <widget class="QPushButton" name="pushButton_2">
      <property name="geometry">
       <rect>
-       <x>140</x>
+       <x>400</x>
        <y>40</y>
        <width>80</width>
        <height>25</height>
@@ -63,6 +63,7 @@ background-color: rgb(117, 139, 113);</string>
        <weight>75</weight>
        <italic>false</italic>
        <bold>true</bold>
+       <underline>true</underline>
       </font>
      </property>
      <property name="text">
@@ -72,7 +73,7 @@ background-color: rgb(117, 139, 113);</string>
     <widget class="QPushButton" name="pushButton_3">
      <property name="geometry">
       <rect>
-       <x>270</x>
+       <x>540</x>
        <y>40</y>
        <width>80</width>
        <height>25</height>
@@ -91,7 +92,7 @@ background-color: rgb(117, 139, 113);</string>
     <widget class="QPushButton" name="pushButton_4">
      <property name="geometry">
       <rect>
-       <x>410</x>
+       <x>680</x>
        <y>40</y>
        <width>80</width>
        <height>25</height>
@@ -110,7 +111,7 @@ background-color: rgb(117, 139, 113);</string>
     <widget class="QPushButton" name="pushButton_5">
      <property name="geometry">
       <rect>
-       <x>550</x>
+       <x>800</x>
        <y>40</y>
        <width>80</width>
        <height>25</height>
@@ -126,6 +127,47 @@ background-color: rgb(117, 139, 113);</string>
       <string>Me</string>
      </property>
     </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>161</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="inputMask">
+      <string/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>search...</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>40</y>
+       <width>80</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>search</string>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -133,7 +175,7 @@ background-color: rgb(117, 139, 113);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>947</width>
      <height>25</height>
     </rect>
    </property>
